@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset='UTF-8' />
+        <link rel="stylesheet" href="styles/freshwater.css"/></link>          
+    </head>
+    <body>
+        <header>
+            <h1>Freshwater Fish</h1>
+        </header>
+        <div id="freshwater-fish">
+        </div>
+        <a href="main.html"><img src="pictures/return_to_home.jpg"></a>
+        <script src="main.js"></script>
+        <script>
+            document.addEventListener('readystatechange', (event) => {
+                switch (event.target.readyState) {
+                    case 'loading':
+                    case 'interactive':
+                        populateFish("freshwater");
+                        break;
+                    case 'complete':
+                }
+            })
+        </script>
+    </body>
+</html>
